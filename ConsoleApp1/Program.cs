@@ -34,11 +34,10 @@ namespace ConsoleApp1
         }
         static void Main(string[] args)
         {
-            Rectangle rectangle = new Rectangle(10, 20);
-            Console.WriteLine($" площадь: {rectangle.Area}, периметр: {rectangle.Perimeter}");
-
-            Rectangle rectangle1 = new Rectangle(12.80, 16.60);
-            Console.WriteLine($" площадь: {Math.Round(rectangle1.Area,2)}, периметр: {Math.Round(rectangle1.Perimeter,2)}");
+            var p1 = Convert.ToDouble(Console.ReadLine());
+            var p2 = Convert.ToDouble(Console.ReadLine());
+            Rectangle rectangle = new Rectangle(p1, p2);
+            Console.WriteLine($"площадь: {rectangle.Area}, периметр: {rectangle.Perimeter}");
         }
     }
 }
